@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <title>Document</title>
+</head>
+
+<body class="bg-slate-200">
+  <header>
+
+    <!-- MOBILE HEADER CONTAINER -->
+    <div class="tb:hidden">
+
+      <div class="mobile-header p-4 gap-8 bg-white">
+        <div class="main-container flex justify-between ">
+          <div class="flex gap-x-2">
+            <button><img src="svg/main-icons.svg" alt="main-icons"></button>
+            <a class="text-nowrap font-['Gotham_Pro'] text-base font-bold leading-6" href="#">trim.ru</a>
+          </div>
+          <div class="sign-in flex gap-x-4">
+            <a class="flex gap-x-2 " href="#"><img class="w-[24px] h-[24px]" src="svg/search.svg" alt="search"></a>
+            <a class="flex gap-x-2 " href="#"><img class="w-[24px] h-[24px]" src="svg/sign-in.svg" alt="sign-in"></a>
+            <a class="flex gap-x-2" href="#"><img class="w-[24px] h-[24px]" src="svg/trash.svg" alt="trash"></a>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-container flex justify-between flex-col p-4 gap-y-4">
+        <div class="flex gap-x-2 items-center justify-between ">
+          <div class="flex gap-x-2 items-center justify-between ">
+            <a class="font-['Gotham_Pro'] text-sm font-light leading-5">Малиновского</a>
+            <img class="w-[7px] h-[4px]" src="svg/arrow-down.svg" alt="arrow-down">
+          </div>
+          <a href="tel:8-800-550-19-80">8-800-550-19-80</a>
+        </div>
+
+        <button
+          class="button-catalog bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded h-[50px] flex items-center justify-center gap-x-2">
+          <span class="bg-burger-button bg-no-repeat bg-[0px_center] w-[24px] h-[24px]"></span>
+          Каталог
+        </button>
+
+      </div>
+    </div>
+
+    <!-- TABLET HEADER CONTAINER -->
+    <div>
+      <div class="hidden tb:block">
+
+        <div class="mobile-header p-4 gap-8 bg-white">
+          <div class="main-container flex justify-between ">
+            <div class="flex gap-x-2">
+              <button><img src="svg/main-icons.svg" alt="main-icons"></button>
+              <a class="text-nowrap font-['Gotham_Pro'] text-base font-bold leading-6 me-[20px]" href="#">trim.ru</a>
+              <div class="flex gap-x-2 items-center me-full ">
+                <a class="font-['Gotham_Pro'] text-sm font-light leading-5">Малиновского</a>
+                <img class="w-[7px] h-[4px]" src="svg/arrow-down.svg" alt="arrow-down">
+              </div>
+            </div>
+
+            <div class="sign-in flex gap-x-4">
+              <a class="flex gap-x-2 " href="#"><img class="w-[24px] h-[24px]" src="svg/sign-in.svg"
+                  alt="sign-in">Войти</a>
+              <a class="flex gap-x-2" href="#"><img class="w-[24px] h-[24px]" src="svg/trash.svg"
+                  alt="trash">Корзина</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-container flex  justify-between p-4 gap-x-4">
+          <button
+            class="button-catalog bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded h-[50px] flex items-center justify-center gap-x-2 flex-1">
+            <span class="bg-burger-button bg-no-repeat bg-[0px_center] w-[24px] h-[24px]"></span>
+            Каталог
+          </button>
+
+          <div class="search-container flex relative flex-1">
+            <img class="absolute top-3 left-1" src="svg/search.svg" alt="search">
+            <input class="border-2 border-black w-full rounded" type="text">
+          </div>
+
+          <div class="flex gap-x-2 items-center justify-center flex-1">
+            <a class="font-['Gotham_Pro'] font-normal text-lg leading-5" href="tel:8-800-550-19-80">8-800-550-19-80</a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- DESKTOP HEADER CONTAINER -->
+    <div class="desktop-header flex items-center justify-between gap-x-4 px-4 py-8 h-[140px] hidden ds:block">
+
+      <img class="logo me-full w-[80px] h-full grow-0 shrink-0 " src="svg/logo.svg" alt="logo">
+      <div class="flex flex-col justify-between grow-0 shrink-0 h-full ">
+        <p class="address">Офис на Малиновского</p>
+        <div class="button-container relative">
+
+          <button
+            class="bg-burger-button bg-no-repeat bg-[1rem_center] button-catalog bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-full rounded">Каталог</button>
+        </div>
+      </div>
+      <div class="header-main-container flex flex-col justify-between flex-auto h-full">
+        <div class="flex justify-between">
+          <div class="flex gap-x-8">
+            <a class="text-nowrap" href="tel:8-800-550-19-80">8-800-550-19-80</a>
+            <nav class="flex justify-between">
+              <ul class="flex gap-x-4">
+                <li><a href="#">Подбор запчастей</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Как купить</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sign-in flex gap-x-4">
+            <a class="flex gap-x-2 " href="#"><img class="w-[24px] h-[24px]" src="svg/sign-in.svg"
+                alt="sign-in">Войти</a>
+            <a class="flex gap-x-2" href="#"><img class="w-[24px] h-[24px]" src="svg/trash.svg" alt="trash">Корзина</a>
+          </div>
+        </div>
+
+        <div class="search-container flex relative">
+          <img class="absolute top-0.5 left-1" src="svg/search.svg" alt="search">
+          <input class="border-2 border-black w-full rounded" type="text">
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="h-auto">
+    <!-- MOBILE MAIN CONTAINER -->
+    <div class="tb:hidden bg-hero-main bg-no-repeat bg-cover relative">
+      <div class="main-container flex flex-col  p-4 w-[220px] z-[1] relative">
+        <img class="w-[122px] h-[33px] mb-[38px]" src="pictures/champion.png" alt="champion">
+        <h1 class="font-['Gotham_Pro'] font-bold text-4xl mb-[29px] text-white">Фильтр масла <br>в подарок
+        </h1>
+        <div class="flex gap-x-2 items-center">
+          <p class="font-['Gotham_Pro'] font-normal text-base">подробнее</p>
+          <button><img src="svg/arrow-right.svg" alt=""></button>
+        </div>
+      </div>
+      <img class="absolute top-[15px] right-0 w[191px] h-[298px] z-[0]" src="pictures/oil.png" alt="oil">
+      <div class="tb:hidden">
+        <section class="main-container flex flex-col  px-4 pb-[10px]">
+          <div class=" bg-white p-[20px]">
+            <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатный звонок</h2>
+            <p class="font-['Gotham_Pro'] font-normal text-base text-sm">На любые номера РФ</p>
+            <a class="font-['Gotham_Pro'] font-normal text-2xl	leading-10	"
+              href="tel:8-800-550-19-80">8-800-550-19-80</a>
+            <div>
+              <button
+                class="flex gap-x-2 items-center justify-center border-green-500 border-2 w-full rounded py-2 px-4 font-['Gotham_Pro'] font-bold text-base	text-green-500"><img
+                  src="svg/whatsapp-button.svg" alt="whatsapp-button">WhatsApp</button>
+            </div>
+          </div>
+        </section>
+        <section class="free-container flex flex-col  px-4 pb-[10px]">
+          <div class=" bg-white p-[20px]">
+            <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатный подбор</h2>
+            <p class="font-['Gotham_Pro'] font-normal text-base text-sm pb-[8px]">Мы найдем самую низкую цену на
+              оригинальную
+              запчасть,
+              достойную альтернативу или самый дешевый аналог.</p>
+
+            <div>
+              <button
+                class="border-blue-500 border-2 w-full rounded h-[52px] font-['Gotham_Pro'] font-bold text-base	text-blue-500">Заявка
+                на
+                подбор</button>
+            </div>
+          </div>
+        </section>
+        <section class="free-delivery-container flex flex-col  px-4 pb-[10px]">
+          <div class=" bg-white p-[20px]">
+            <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатная <br>доставка</h2>
+            <p class="font-['Gotham_Pro'] font-normal text-base text-sm pb-[8px]">Согласуем и привезём запчасти в офис
+              или
+              домой в удобное для Вас время.</p>
+
+            <div>
+              <button
+                class="border-blue-500 border-2 w-full rounded h-[52px] font-['Gotham_Pro'] font-bold text-base	text-blue-500">Пункты
+                выдачи</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="first-promo-container flex flex-col  px-4 pb-[10px]">
+          <div class=" bg-custom-blue p-[20px] relative">
+            <img class="absolute top-[0] right-[0]" src="pictures/car-wipers.png" alt="">
+            <h2 class="pt-[10px] font-['Gotham_Pro'] font-bold text-2xl text-white pb-[134px]">Щетки AWM</h2>
+
+            <a class="font-['Gotham_Pro'] font-bold text-base text-white " href="#">подробнее<img
+                class="w-[92px] pb-[10px]" src="svg/horisontal-line.svg" alt="horisontal-line"></a>
+          </div>
+        </section>
+
+        <section class="second-promo-container flex flex-col  px-4 pb-[10px]">
+          <div class=" bg-color-two p-[20px] relative">
+            <img class="absolute top-[21px] right-[11px]" src="pictures/dot4.png" alt="dot4">
+            <h2 class="pt-[10px] font-['Gotham_Pro'] font-normal text-xl leading-6 text-white pb-[25px]">Весь январь
+            </h2>
+            <p class="font-['Gotham_Pro'] text-bold text-2xl leading-8 text-white pb-[25px]">Скидка 20% <br>на весь
+              <br>DOT4
+            </p>
+
+            <a class="font-['Gotham_Pro'] font-bold text-base text-white " href="#">подробнее<img
+                class="w-[92px] pb-[10px]" src="svg/horisontal-line.svg" alt="horisontal-line"></a>
+          </div>
+        </section>
+
+        <!-- <section class="second-promo-container flex flex-col  px-4 pt-[14px] pb-[10px]">
+          <ul class="flex flex-col gap-y-[25px]">
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Подбор запчастей</a></li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Доставка</a></li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Как купить</a></li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Оплата</a></li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Договор оферты</a></li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Политика конфиденциальности</a>
+            </li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Реквизиты</a></li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Контакты</a></li>
+            <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Акции</a></li>
+          </ul>
+        </section> -->
+      </div>
+    </div>
+
+    <!-- TABLET MAIN CONTAINER -->
+    <div class="hidden tb:block bg-hero-main-tb bg-no-repeat bg-cover relative min-h-[517px]">
+      <div class="main-container flex flex-col  p-4 w-[310px] pt-[40px] pb-[40px] z-[1] relative">
+        <img class="w-[122px] h-[33px] mb-[38px]" src="pictures/champion.png" alt="champion">
+        <h1 class="font-['Gotham_Pro'] font-bold text-4xl mb-[29px] text-white">Фильтр масла <br>в подарок
+        </h1>
+        <div class="flex gap-x-2 items-center">
+          <p class="font-['Gotham_Pro'] font-normal text-base">подробнее</p>
+          <button><img src="svg/arrow-right.svg" alt=""></button>
+        </div>
+      </div>
+      <img class="absolute top-[0px] right-0 w[297px] h-[464px] z-[0]" src="pictures/oil-tb.png" alt="oil">
+
+      <section class="main-container flex flex-col px-4 pb-[10px] relative">
+        <div class=" bg-white p-[20px] flex grow-0 shrink-0 ">
+          <div class="flex-1">
+            <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатный звонок</h2>
+            <p class="font-['Gotham_Pro'] font-normal text-base text-sm">На любые номера РФ</p>
+            <a class="font-['Gotham_Pro'] font-normal text-2xl	leading-10	"
+              href="tel:8-800-550-19-80">8-800-550-19-80</a>
+          </div>
+          <div class="flex flex-1 ">
+            <button
+              class="flex gap-x-2 items-center justify-center self-end border-green-500 border-2 w-full rounded py-2 px-4 font-['Gotham_Pro'] font-bold text-base	text-green-500"><img
+                src="svg/whatsapp-button.svg" alt="whatsapp-button">WhatsApp</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="free-container flex flex-col  px-4 pb-[10px]">
+        <div class=" bg-white p-[20px] flex items-center">
+          <div class="flex-1">
+            <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатный подбор</h2>
+            <p class="font-['Gotham_Pro'] font-normal text-base text-sm pb-[8px]">Мы найдем самую низкую цену на
+              оригинальную
+              запчасть,
+              достойную альтернативу или самый дешевый аналог.</p>
+          </div>
+
+          <div class="flex flex-1 ">
+            <button
+              class="border-blue-500 border-2 w-full rounded h-[52px] font-['Gotham_Pro'] font-bold text-base	text-blue-500">Заявка
+              на
+              подбор</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="free-delivery-container flex flex-col  px-4 pb-[10px]">
+        <div class=" bg-white p-[20px] flex items-center">
+          <div class="flex-1">
+            <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатная <br>доставка</h2>
+            <p class="font-['Gotham_Pro'] font-normal text-base text-sm pb-[8px]">Согласуем и привезём запчасти в офис
+              или
+              домой в удобное для Вас время.</p>
+
+          </div>
+
+          <div class="flex flex-1 ">
+            <button
+              class="border-blue-500 border-2 w-full rounded h-[52px] font-['Gotham_Pro'] font-bold text-base	text-blue-500">Пункты
+              выдачи</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex  grow-0 shrink-0 gap-x-4">
+        <section class="first-promo-container flex flex-col flex-1  ps-4 pb-[10px]">
+          <div class=" bg-custom-blue p-[20px] relative">
+            <img class="absolute top-[0] right-[0]" src="pictures/car-wipers.png" alt="">
+            <h2 class="pt-[10px] font-['Gotham_Pro'] font-bold text-2xl text-white pb-[134px]">Щетки AWM</h2>
+
+            <a class="font-['Gotham_Pro'] font-bold text-base text-white " href="#">подробнее<img
+                class="w-[92px] pb-[10px]" src="svg/horisontal-line.svg" alt="horisontal-line"></a>
+          </div>
+        </section>
+
+        <section class="second-promo-container flex flex-col flex-1  pe-4 pb-[10px]">
+          <div class=" bg-color-two p-[20px] relative">
+            <img class="absolute top-[21px] right-[11px]" src="pictures/dot4.png" alt="dot4">
+            <h2 class="pt-[10px] font-['Gotham_Pro'] font-normal text-xl leading-6 text-white pb-[25px]">Весь январь
+            </h2>
+            <p class="font-['Gotham_Pro'] text-bold text-2xl leading-8 text-white pb-[25px]">Скидка 20% <br>на весь
+              <br>DOT4
+            </p>
+
+            <a class="font-['Gotham_Pro'] font-bold text-base text-white " href="#">подробнее<img
+                class="w-[92px] pb-[10px]" src="svg/horisontal-line.svg" alt="horisontal-line"></a>
+          </div>
+        </section>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <footer class="">
+    <!-- FOOTER MOBILE CONTAINER -->
+    <!-- <div class="tb:hidden px-4 pt-[10px] pb-[10px] ps-[20px]">
+      <div class="flex gap-x-[24px] pb-[16px]">
+        <a href="#"><img class="" src="svg/vkontakte.svg" alt=""></a>
+        <a href="#"><img class="" src="svg/whatsapp.svg" alt=""></a>
+        <a href="#"><img class="" src="svg/instagram.svg" alt=""></a>
+      </div>
+      <p class="font-['Gotham_Pro'] text-footer-color text-sm leading-5">Дизайн — «Есть Идея!»</p>
+    </div> -->
+
+    <!-- FOOTER TABLET CONTAINER -->
+    <section class="second-promo-container px-4 pt-[14px] pb-[10px]">
+      <ul class="flex justify-center flex-col tb:flex-row gap-[20px] flex-wrap">
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Подбор запчастей</a></li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Доставка</a></li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Как купить</a></li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Оплата</a></li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Договор оферты</a></li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Политика конфиденциальности</a>
+        </li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Реквизиты</a></li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Контакты</a></li>
+        <li><a class="font-['Gotham_Pro'] font-bold text-[15px] leading-5" href="#">Акции</a></li>
+      </ul>
+    </section>
+    <div class="tb:flex tb:justify-center tb:flex-col tb:items-center px-4 pt-[10px] pb-[10px] ps-[20px] ">
+      <div class=" flex gap-x-[24px] pb-[16px]">
+        <a href="#"><img class="" src="svg/vkontakte.svg" alt=""></a>
+        <a href="#"><img class="" src="svg/whatsapp.svg" alt=""></a>
+        <a href="#"><img class="" src="svg/instagram.svg" alt=""></a>
+      </div>
+      <p class="font-['Gotham_Pro'] text-footer-color text-sm leading-5">Дизайн — «Есть Идея!»</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

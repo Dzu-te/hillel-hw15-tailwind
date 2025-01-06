@@ -85,7 +85,7 @@
 
 
     <!-- DESKTOP HEADER CONTAINER -->
-    <div class="desktop-header flex items-center justify-between gap-x-4 px-4 py-8 h-[140px] hidden ds:block">
+    <div class="desktop-header flex items-center justify-between gap-x-4 px-4 py-8 h-[140px] bg-white hidden ds:flex">
       <img class="logo me-full w-[80px] h-full grow-0 shrink-0 " src="svg/logo.svg" alt="logo">
       <div class="flex flex-col justify-between grow-0 shrink-0 h-full ">
         <p class="address">Офис на Малиновского</p>
@@ -242,17 +242,15 @@
           </div>
         </section>
 
-        <section class="free-container flex flex-col  pb-[10px] ds:flex-1 ds:h-[201px]  ">
-          <div class=" bg-white p-[20px] flex items-center ds:flex-col ds:h-full">
+        <section class="free-container flex flex-col pb-[10px] ds:flex-1 ds:h-[201px]  ">
+          <div class=" bg-white p-[20px] flex items-center  ds:flex-col ds:justify-between ds:h-full">
             <div class="flex-1 ">
               <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатный подбор</h2>
               <p class="font-['Gotham_Pro'] font-normal text-base text-sm pb-[8px]">Мы найдем самую низкую цену на
-                оригинальную
-                запчасть,
-                достойную альтернативу или самый дешевый <br> аналог.</p>
+                оригинальную запчасть, достойную альтернативу или самый дешевый аналог.</p>
             </div>
 
-            <div class="flex flex-1 ds:w-full">
+            <div class="flex-1 ds:flex-none ds:w-full">
               <button
                 class="border-blue-500 border-2 w-full rounded h-[52px] font-['Gotham_Pro'] font-bold text-base	text-blue-500 ">Заявка
                 на
@@ -292,7 +290,7 @@
         </section>
 
         <section
-          class="second-promo-container   ds:object-cover flex flex-col flex-1 ds:flex-[2_2_0%]   pb-[10px] ds:pb-[0] ds:col-span-2">
+          class="second-promo-container  flex flex-col flex-1 ds:flex-[2_2_0%]   pb-[10px] ds:pb-[0] ds:col-span-2">
           <div class=" bg-color-two p-[20px] relative">
             <img class=" absolute top-[21px] right-[11px]" src="pictures/dot4.png" alt="dot4">
 

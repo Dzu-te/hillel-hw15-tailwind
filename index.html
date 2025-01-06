@@ -46,7 +46,7 @@
     </div>
 
     <!-- TABLET HEADER CONTAINER -->
-    <div class="hidden tb:block">
+    <div class="hidden tb:block ds:hidden">
       <div class="mobile-header p-4 gap-8 bg-white">
         <div class="main-container flex justify-between ">
           <div class="flex gap-x-2">
@@ -212,7 +212,7 @@
     </div>
 
     <!-- TABLET MAIN CONTAINER -->
-    <div class="hidden tb:block bg-hero-main-tb bg-no-repeat bg-cover relative min-h-[517px]">
+    <div class="hidden tb:block  bg-hero-main-tb bg-no-repeat bg-cover relative min-h-[517px]">
       <div class="main-container flex flex-col  p-4 w-[310px] pt-[40px] pb-[40px] z-[1] relative">
         <img class="w-[122px] h-[33px] mb-[38px]" src="pictures/champion.png" alt="champion">
         <h1 class="font-['Gotham_Pro'] font-bold text-4xl mb-[29px] text-white">Фильтр масла <br>в подарок
@@ -224,10 +224,9 @@
       </div>
       <img class="absolute top-[0px] right-0 w[297px] h-[464px] z-[0] ds:top-[0] ds:left-[50%] ds:translate-x-[-50%]	"
         src="pictures/oil-tb.png" alt="oil">
-      <div class="ds:flex ds:justify-between relative">
 
-        <section
-          class="main-container flex flex-col px-4 pb-[10px] relative ds:flex-1 ds:grow-1 ds:shrink-0 ds:h-[201px] ds:pe-[0]">
+      <div class="ds:grid ds:grid-cols-[1fr_1fr_1fr]  relative ds:gap-x-4 px-4 ">
+        <section class="main-container flex flex-col  pb-[10px] relative ds:flex-1 ds:h-[201px]  ">
           <div class=" bg-white p-[20px] flex grow-0 shrink-0 ds:flex-col ds:h-full">
             <div class="flex-1">
               <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатный звонок</h2>
@@ -243,8 +242,7 @@
           </div>
         </section>
 
-        <section
-          class="free-container flex flex-col  px-4 pb-[10px] ds:flex-1 ds:grow-1 ds:shrink-0 ds:h-[201px] ds:pe-[0]">
+        <section class="free-container flex flex-col  pb-[10px] ds:flex-1 ds:h-[201px]  ">
           <div class=" bg-white p-[20px] flex items-center ds:flex-col ds:h-full">
             <div class="flex-1 ">
               <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатный подбор</h2>
@@ -263,8 +261,7 @@
           </div>
         </section>
 
-        <section
-          class="free-delivery-container flex flex-col  px-4 pb-[10px] ds:flex-1 ds:grow-1 ds:shrink-0 ds:h-[201px]">
+        <section class="free-delivery-container flex flex-col   pb-[10px] ds:flex-1 ds:h-[201px] ">
           <div class=" bg-white p-[20px] flex items-center ds:fl ds:flex-col ds:h-full">
             <div class="flex-1 ds:pb-[20px]">
               <h2 class="font-['Gotham_Pro'] font-bold text-2xl leading-6 pb-[8px]">Бесплатная доставка</h2>
@@ -283,8 +280,8 @@
         </section>
       </div>
 
-      <div class="flex  grow-0 shrink-0 gap-[x-4] ds:gap-x-4">
-        <section class="first-promo-container flex flex-col flex-1  ps-4 pb-[10px] ds:pb-[0] ds:h-full">
+      <div class="flex   gap-x-4 px-4 ds:grid ds:grid-cols-[1fr_1fr_1fr]">
+        <section class="first-promo-container flex flex-col flex-1  pb-[10px] ds:pb-[0] ds:h-full">
           <div class=" bg-custom-blue p-[20px] relative">
             <img class="absolute top-[0] right-[0]" src="pictures/car-wipers.png" alt="">
             <h2 class="pt-[10px] font-['Gotham_Pro'] font-bold text-2xl text-white pb-[138px]">Щетки AWM</h2>
@@ -295,9 +292,9 @@
         </section>
 
         <section
-          class="second-promo-container ds:bg-assort-dot  ds:object-cover flex flex-col flex-1 ds:flex-[2]  pe-4 pb-[10px] ds:pb-[0]">
+          class="second-promo-container   ds:object-cover flex flex-col flex-1 ds:flex-[2_2_0%]   pb-[10px] ds:pb-[0] ds:col-span-2">
           <div class=" bg-color-two p-[20px] relative">
-            <img class="ds:hidden absolute top-[21px] right-[11px]" src="pictures/dot4.png" alt="dot4">
+            <img class=" absolute top-[21px] right-[11px]" src="pictures/dot4.png" alt="dot4">
 
             <h2 class="pt-[10px] font-['Gotham_Pro'] font-normal text-xl leading-6 text-white pb-[25px]">Весь январь
             </h2>

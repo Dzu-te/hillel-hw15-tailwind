@@ -13,6 +13,8 @@ module.exports = {
         'burger-button': "url('../svg/catalog-burger.svg')",
         'hero-main': "url('../pictures/bgi-main.png')",
         'hero-main-tb': "url('../pictures/bgi-main-tb.png')",
+        'assort-dot': "url('../pictures/assort-dot4.png')",
+
       },
       colors: {
         'custom-blue': '#01B7E6',
